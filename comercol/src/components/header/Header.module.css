@@ -1,20 +1,25 @@
 .header {
     display: flex;
-    justify-content: center;
+    margin: 3rem 5rem;
+    
 }
 
 .headerDiv {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     background: none;
     margin: 0 2rem;
+    width: 100vw;
 }
 
 .logo {
     color: black;
     font-family: 'Arial', sans-serif;
     text-align: center;
+    padding: 1rem 1rem;
+    /* box-shadow: inset 0px -8px 25px 0px rgba(0, 0, 0, 0.6); */
+    text-shadow: 5px 3px 4px rgb(140, 140, 140);
 }
 
 .burgerMenu {
@@ -28,7 +33,7 @@
     justify-content: center;
     align-items: center;
     width: 3rem;
-    height: 2.5rem;
+    height: 2.8rem;
     margin: 4px 0;
     border: none;
     transition: 0.4s;
@@ -39,53 +44,76 @@
 
 .nav {
     display: flex;
-    flex-grow: 1;
     justify-content: center;
 }
 
 .navList {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navLi {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2rem 3rem;
+    transition: background 0.3s ease;
+    border: solid 1px rgb(0, 0, 0);
 }
 
 .navItem a {
     text-decoration: none;
     color: white;
     padding: 2rem 3rem;
-    background: rgba(0, 0, 0, 0.5);
-    /* Fondo oscuro con opacidad */
-    border-radius: 4px;
     transition: background 0.3s ease;
 }
 
 .specialItem a {
-    background: rgba(255, 255, 255, 0.5);
-    /* Fondo claro con opacidad */
+    display: flex;
+    background: rgba(100, 100, 100, 1);
     color: black;
+    padding: 2rem 3rem;
+    transition: background 0.3s ease;
+    margin-left: 10px;
+    border: solid 1px rgb(0, 0, 0);
 }
 
-.navItem a:hover {
-    background: rgba(0, 0, 0, 0.8);
-    /* Aumenta la opacidad al pasar el ratón */
-}
-
-.specialItem a:hover {
-    background: rgba(255, 255, 255, 0.8);
-}
 
 /* Estilos para dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+
+    .header {
+        margin: 3rem 1rem;
+    }
+
+    .headerDiv {
+        justify-content: space-between;
+        width: 100vw;
+    }
+
     .nav {
         display: none;
         position: absolute;
-        top: 60px;
+        margin-top: 1rem;
         right: 0;
         background-color: rgba(66, 66, 66, 0.641);
         width: 100%;
         height: 100%;
         flex-direction: column;
         align-items: center;
+    }
+
+    .navList {
+        flex-direction: column;
+        background: none;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navItem a {
+        background: rgba(0, 0, 0, 0.3);
     }
 
     .showMenu {
@@ -98,8 +126,37 @@
         /* Muestra el ícono de menú en móviles */
     }
 
-    .navList {
+    .navLi {
+        display: flex;
         flex-direction: column;
         gap: 5rem;
+        background: none;
+        align-items: center;
+        width: 100%;
+        border: none;
     }
+    
+
+    .specialItem a {
+        margin-top: 1rem;
+        display: flex;
+        background: rgba(255, 255, 255, 0.5);
+        color: black;
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+    }
+}
+
+@media (hover:hover) {
+    .navItem a:hover {
+        background: rgb(0, 0, 0);
+        color: white;
+    }
+
+    .specialItem a:hover {
+        background: rgba(0, 0, 0, 1);
+        color: white;
+    }
+
 }
