@@ -1,0 +1,19 @@
+.blackContainer {
+    display: flex;
+    background-color: black;
+    height: 70vh;
+    justify-content: space-around;
+    align-items: self-end;
+    color: aliceblue;
+}
+
+.textContainer {
+    height: 10rem;
+    justify-content: space-arounds;
+}
+
+.horizontalLine {
+    height: 5%;
+    width: 15%;
+    border-bottom: 0.5px white solid;
+}
