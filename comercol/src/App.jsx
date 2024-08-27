@@ -1,5 +1,5 @@
 import Header from './components/header/Header'
-// import Footer from './components/footer/Footer'
+import Footer from './components/footer/Footer'
 import Home from './pages/home/Home'
 import About from './pages/about/About'
 import Products from './pages/products/Products'
@@ -19,7 +19,7 @@ function App() {
         </Routes>
         
       </BrowserRouter>
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }

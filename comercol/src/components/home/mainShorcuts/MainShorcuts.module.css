@@ -13,6 +13,7 @@
 
 .img {
     width: 100%;
+    object-fit: cover;
 }
 
 .title{
@@ -23,6 +24,8 @@
 .text{
     margin: 1rem 0;
     font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-weight: lighter;
 }
 
 .link {
