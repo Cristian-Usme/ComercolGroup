@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './Header.module.css';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,11 +23,11 @@ const Header = () => {
                     <nav className={`${styles.nav} ${isMenuOpen ? styles.showMenu : ''}`}>
                         <ul className={styles.navList}>
                             <div className={styles.navLi}>
-                                <li className={styles.navItem}><a href="#inicio">Inicio</a></li>
-                                <li className={styles.navItem}><a href="#sobre-nosotros">Nosotros</a></li>
-                                <li className={styles.navItem}><a href="#productos">Productos</a></li>
+                                <li className={styles.navItem}><Link to="/">Inicio</Link></li>
+                                <li className={styles.navItem}><Link to="/About">Nosotros</Link></li>
+                                <li className={styles.navItem}><Link to="/products">Productos</Link></li>
                             </div>
-                            <li className={`${styles.navItem} ${styles.specialItem}`}><a href="#contactanos">Contáctanos</a></li>
+                            <li className={`${styles.navItem} ${styles.specialItem}`}><Link to="/Contact">Contáctanos</Link></li>
                         </ul>
                     </nav>
                 </div>
