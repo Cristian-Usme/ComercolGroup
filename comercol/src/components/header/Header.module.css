@@ -1,7 +1,12 @@
 .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
-    margin: 3rem 5rem;
-    
+    padding: 3rem 5rem;
+    box-sizing: border-box;
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
 }
 
 .headerDiv {
@@ -9,8 +14,7 @@
     align-items: center;
     justify-content: space-between;
     background: none;
-    margin: 0 2rem;
-    width: 100vw;
+    width: 100%;
 }
 
 .logo {
@@ -18,7 +22,6 @@
     font-family: 'Arial', sans-serif;
     text-align: center;
     padding: 1rem 1rem;
-    /* box-shadow: inset 0px -8px 25px 0px rgba(0, 0, 0, 0.6); */
     text-shadow: 5px 3px 4px rgb(140, 140, 140);
 }
 
@@ -39,7 +42,6 @@
     transition: 0.4s;
     background-color: gray;
     font-size: 2.2rem;
-
 }
 
 .nav {
@@ -80,29 +82,33 @@
     border: solid 1px rgb(0, 0, 0);
 }
 
-
 /* Estilos para dispositivos móviles */
 @media (max-width: 1024px) {
 
     .header {
-        margin: 3rem 1rem;
+        padding: 1rem;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
     }
 
     .headerDiv {
         justify-content: space-between;
-        width: 100vw;
+        width: 100%;
     }
 
     .nav {
         display: none;
         position: absolute;
-        margin-top: 1rem;
+        top: 100%;
         right: 0;
-        background-color: rgba(66, 66, 66, 0.641);
+        background-color: rgba(66, 66, 66, 0.742);
         width: 100%;
-        height: 100%;
+        height: auto;
         flex-direction: column;
         align-items: center;
+        padding: 1rem;
     }
 
     .navList {
@@ -110,20 +116,6 @@
         background: none;
         align-items: center;
         width: 100%;
-    }
-
-    .navItem a {
-        background: rgba(0, 0, 0, 0.3);
-    }
-
-    .showMenu {
-        display: flex;
-        /* Muestra el menú cuando se hace clic */
-    }
-
-    .burgerMenu {
-        display: flex;
-        /* Muestra el ícono de menú en móviles */
     }
 
     .navLi {
@@ -134,8 +126,27 @@
         align-items: center;
         width: 100%;
         border: none;
+        padding: 2rem 3rem;
     }
-    
+
+    .burgerMenu {
+        display: flex;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1001;
+    }
+
+    .showMenu {
+        display: flex;
+    }
+
+    .burger {
+        width: 3.5rem;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.8); /* Hace que el botón resalte más */
+        color: white;
+    }
 
     .specialItem a {
         margin-top: 1rem;
@@ -158,5 +169,4 @@
         background: rgba(0, 0, 0, 1);
         color: white;
     }
-
 }
