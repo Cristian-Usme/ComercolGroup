@@ -26,12 +26,12 @@ const Footer = () => {
                             <li className={styles.item}>LinkedIn</li>
                         </ul>
                     </div>
-                    <div className={styles.itemContainer}>
+                    <div className={styles.itemContainer} id={styles.Consultas}>
                         <h2 >Consultas</h2>
                         <p className={styles.item}>Para cualquier duda o inquietud <br />
                             comuniquese a: +57 64 4444444</p>
                     </div>
-                    <div className={styles.itemContainer}>
+                    <div className={styles.itemContainer} id={styles.Image}>
                         <img src="../../../public/vite.svg" alt="" />
                     </div>
                 </div>

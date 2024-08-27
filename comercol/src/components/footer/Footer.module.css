@@ -1,4 +1,5 @@
 .footer {
+    align-items: center;
     background-color: lightgrey;
     box-shadow: 0px -30px 20px -5px rgba(211, 211, 211, 0.90);
 }
@@ -12,17 +13,84 @@
 .lblfooter .itemsFooter {
     display: flex;
     justify-content: space-around;
-    margin: 3rem;
+    margin-top: 3rem;
 }
 
 .item {
     list-style: none;
-}
-
-.item {
     margin-block: 1rem;
 }
 
 .privacity {
     margin-top: 4rem;
+}
+
+@media (max-width: 1024px) {
+    .lblfooter {
+        margin-inline: 3rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .lblfooter {
+        margin-inline: 1rem;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+
+
+    }
+
+    .lblfooter .itemsFooter {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 90vw;
+
+    }
+
+    .logoComercol {
+        grid-column: span 2;
+        /* Hacer que el logo ocupe las dos columnas */
+        text-align: center;
+    }
+
+    .itemContainer {
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    #Consultas {
+        grid-column: span 2;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #Image {
+        grid-column: span 2;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .privacity {
+        grid-column: span 2;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .lblfooter .itemsFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 1rem;
+        width: 85vw;
+    }
 }
