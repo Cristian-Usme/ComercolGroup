@@ -56,7 +56,6 @@
     .learnMore,
     .contact {
         padding: 0.8rem 2rem;
-        /* reducir padding de los botones para dispositivos pequeños */
     }
 }
 
@@ -69,6 +68,7 @@
         align-items: center;
         text-align: center;
     }
+
     .buttons {
         flex-direction: column;
         gap: 1rem;
@@ -78,8 +78,17 @@
     .contact {
         padding: 0.8rem 2rem;
     }
+
+    .buttons {
+        margin-left: 0;
+    }
 }
 
+@media (max-width: 376px) {
+    .textParallax {
+        font-size: 1.2rem;
+    }
+}
 
 @media (hover:hover) {
     .learnMore:hover {
