@@ -1,3 +1,4 @@
+import MainAbout from "../../components/home/mainAbout/MainAbout";
 import MainParallax from "../../components/home/mainParallax/MainParallax";
 import MainShorcuts from "../../components/home/mainShorcuts/MainShorcuts";
 import ResponsiveCarousel from "../../components/home/slideShorcuts/ResponsiveCarousel";
@@ -9,6 +10,7 @@ export default function Home() {
             <MainParallax />
             <MainShorcuts />
             <ResponsiveCarousel />
+            <MainAbout />
         </div>
     )
 }
