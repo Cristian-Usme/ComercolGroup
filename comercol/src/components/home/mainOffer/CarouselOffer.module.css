@@ -28,12 +28,12 @@
     justify-content: center;
 }
 
-h4 {
+.h4 {
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
 
-p {
+.p {
     line-height: 1.5rem;
     text-indent: 1.5rem;
 }

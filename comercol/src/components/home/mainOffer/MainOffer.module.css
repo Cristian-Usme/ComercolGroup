@@ -39,11 +39,11 @@
     justify-content: center;
 }
 
-h4 {
+.h4 {
     margin-bottom: 1rem;
 }
 
-p {
+.p {
     line-height: 1.5rem;
 }
 
@@ -67,11 +67,11 @@ p {
         justify-content: center;
     }
 
-    h4 {
+    .h4 {
         margin: 1.5rem 0 0.8rem 0.5rem;
     }
 
-    .item p {
+    .item .p {
         text-indent: 1.5rem;
     }
 }
