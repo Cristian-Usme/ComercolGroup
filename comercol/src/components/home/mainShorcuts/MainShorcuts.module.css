@@ -9,6 +9,7 @@
 .mainShorcuts {
     width: 20vw;
     text-align: start;
+    transition: 350ms;
 }
 
 .img {
@@ -41,5 +42,12 @@
 @media (max-width: 1024px) {
     .mainShorcutsContainer {
         display: none;
+    }
+}
+
+@media (hover:hover) {
+    .mainShorcuts:hover {
+        font-size: 1.5rem;
+        align-items: start;
     }
 }

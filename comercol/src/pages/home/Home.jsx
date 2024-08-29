@@ -1,7 +1,9 @@
 import MainAbout from "../../components/home/mainAbout/MainAbout";
+import CarouselOffer from "../../components/home/mainOffer/CarouselOffer";
+import MainOffer from "../../components/home/mainOffer/MainOffer";
 import MainParallax from "../../components/home/mainParallax/MainParallax";
 import MainShorcuts from "../../components/home/mainShorcuts/MainShorcuts";
-import ResponsiveCarousel from "../../components/home/slideShorcuts/ResponsiveCarousel";
+import ResponsiveCarousel from "../../components/home/mainShorcuts/ResponsiveCarousel";
 
 
 export default function Home() {
@@ -11,6 +13,8 @@ export default function Home() {
             <MainShorcuts />
             <ResponsiveCarousel />
             <MainAbout />
+            <MainOffer />
+            <CarouselOffer />
         </div>
     )
 }
