@@ -1,0 +1,50 @@
+.visitUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textVisitUs{
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    padding: 3rem 2.5rem 2rem;
+    overflow-wrap: break-word;
+    gap: 2rem;
+    line-height: 2rem;
+}
+
+.h1{
+    margin-bottom: 1rem;
+}
+
+.map{
+    width: 70vw;
+    height: 30rem;
+    border: none;
+    margin: 3rem 0 5rem;
+    box-shadow: '0px 0px 10px rgba(0, 0, 0, 0.2)';
+}
+
+@media (max-width: 1222px) {
+
+    .textVisitUs{
+        width: 85vw;
+    }
+
+    .map{
+        width: 85vw;
+    }
+}
+
+@media (max-width: 880px) {
+
+    .textVisitUs{
+        width: 90vw;
+    }
+
+    .map{
+        width: 90vw;
+    }
+}
