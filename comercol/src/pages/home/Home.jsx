@@ -6,17 +6,16 @@ import MainShorcuts from "../../components/home/mainShorcuts/MainShorcuts";
 import ResponsiveCarousel from "../../components/home/mainShorcuts/ResponsiveCarousel";
 import MainSlide from "../../components/home/mainSlide/MainSlide";
 
-
 export default function Home() {
-    return (
-        <div>
-            <MainParallax />
-            <MainShorcuts />
-            <ResponsiveCarousel />
-            <MainAbout />
-            <MainOffer />
-            <CarouselOffer />
-            <MainSlide />
-        </div>
-    )
+  return (
+    <div>
+      <MainParallax />
+      <MainShorcuts />
+      <ResponsiveCarousel />
+      <MainAbout />
+      <MainOffer />
+      <CarouselOffer />
+      <MainSlide />
+    </div>
+  );
 }

@@ -1,11 +1,11 @@
-
+import Form from "../../components/contact/form/Form";
+import VisitUs from "../../components/contact/visitUs/VisitUs";
 
 export default function Contact() {
     return (
         <div>
-            <h1>
-                Contact
-            </h1>
+            <Form />
+            <VisitUs />
         </div>
     )
 }
