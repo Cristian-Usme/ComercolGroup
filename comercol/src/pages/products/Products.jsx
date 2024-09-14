@@ -1,10 +1,13 @@
+import Shipping from "../../components/products/shipping/Shipping";
+import Grid from "../../components/products/grid/Grid";
+import Chart from "../../components/products/chart/Chart";
 
 export default function Products() {
-    return (
-        <div>
-            <h1>
-                Products
-            </h1>
-        </div>
-    )
+  return (
+    <div>
+      <Shipping />
+      <Grid />
+      <Chart />
+    </div>
+  );
 }
