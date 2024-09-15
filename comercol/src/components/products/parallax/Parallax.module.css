@@ -1,0 +1,49 @@
+.mainParallax {
+    height: 47rem;
+    background-image: url('https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2023/02/diferencia-mar-oceano-2967842.jpg?tf=3840x');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textParallax {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 15rem;
+    left: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    .textParallax {
+        font-size: 1.5rem;
+        bottom: 5rem;
+        left: 0vw;
+        text-align: center;
+    }
+}
+
+@media (max-width: 426px) {
+    .textParallax {
+        width: 100%;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        bottom: 15vh;
+        left: 0vw;
+    }
+}
+
+@media (max-width: 376px) {
+    .textParallax {
+        font-size: 1rem;
+    }
+}
