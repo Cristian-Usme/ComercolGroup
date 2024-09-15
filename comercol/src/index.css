@@ -1,3 +1,10 @@
+:root {
+  --primary-font: 'Montserrat';
+  --heading-font: 'Oswald';
+  --primary-color: whitesmoke;
+  --secundary-color: black;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
