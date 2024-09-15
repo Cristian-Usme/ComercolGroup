@@ -4,6 +4,10 @@ export default function Grid() {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>PRODUCTOS</h1>
+      <p className={styles.text}>
+        Nos encargamos de transportar todo tipo de productos y mercancías con
+        total seguridad.
+      </p>
       <div className={styles.grid}>
         <div className={styles.item1}></div>
         <div className={styles.item2}></div>
