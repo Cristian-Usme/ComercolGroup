@@ -1,0 +1,83 @@
+.container {
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 2rem;
+    font-family: var(--heading-font);
+    margin-bottom: 3rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+        "item1 item3 item5 item7"
+        "item1 item4 item5 item7"
+        "item2 item4 item6 item6";
+    grid-gap: 10px;
+    grid-template-rows: 10rem 15rem 10rem;
+    grid-template-columns: 16rem 20rem 16rem 20rem;
+}
+  
+.item1 {
+    grid-area: item1;
+    background-image: url('https://cdn.pixabay.com/photo/2023/09/29/14/58/road-8284023_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+}
+.item1:hover {
+    background-image: url('https://cdn.pixabay.com/photo/2022/09/23/15/33/banana-7474703_1280.jpg');
+}
+
+.item2 {
+    grid-area: item2;
+    background-image: url('https://cdn.pixabay.com/photo/2023/08/11/10/15/watch-8183268_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.item3 {
+    grid-area: item3;
+    background-image: url('https://cdn.pixabay.com/photo/2017/03/02/02/57/glasses-2110282_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.item4 {
+    grid-area: item4;
+    background-image: url('https://cdn.pixabay.com/photo/2017/07/28/16/30/bee-pollen-2549125_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.item5 {
+    grid-area: item5;
+    background-image: url('https://cdn.pixabay.com/photo/2020/03/06/16/16/cornflakes-4907490_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.item6 {
+    grid-area: item6;
+    background-image: url('https://cdn.pixabay.com/photo/2015/05/31/12/50/shop-791582_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.item7 {
+    grid-area: item7;
+    background-image: url('https://cdn.pixabay.com/photo/2020/08/26/14/29/technology-5519649_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+}

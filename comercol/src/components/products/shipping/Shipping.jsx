@@ -3,12 +3,12 @@ import styles from "./Shipping.module.css";
 export default function Shipping() {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Transporte</h1>
-      <h2>
+      <h1 className={styles.title}>TRANSPORTE</h1>
+      <p className={styles.text}>
         La empresa cuenta con amplia experiencia en el manejo de todo tipo de
         transporte, asegurando que su mercancía llegue a tiempo y de manera
         eficiente a cualquier destino.
-      </h2>
+      </p>
       <div className={styles.list}>
         <div className={styles.method}>
           <img
