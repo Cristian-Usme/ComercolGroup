@@ -32,7 +32,7 @@
     background: rgba(0, 0, 0, 0.9);
     font-size: 1rem;
     color: white;
-    transition: background 500ms ease, color 300ms ease; /* Transición añadida */
+    transition: background 500ms ease, color 500ms ease;
 }
 
 .contact {
@@ -40,10 +40,9 @@
     border: solid 1px rgb(0, 0, 0);
     background: rgba(156, 156, 156, 0.7);
     font-size: 1rem;
-    transition: background 500ms ease, color 300ms ease; /* Transición añadida */
+    transition: background 500ms ease, color 500ms ease;
 }
 
-/* Estilos para dispositivos pequeños */
 @media (max-width: 1024px) {
     .textParallax {
         font-size: 2rem;
