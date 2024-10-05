@@ -58,3 +58,32 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+
+/* LAPTOPS PEQUEÑAS */
+@media screen 
+  and (min-device-width: 62em) 
+  and (max-device-width: 82em) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+@media screen 
+  and (min-device-width: 62em) 
+  and (max-device-width: 82em) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+
+}
+
+/* TABLETS */
+@media screen 
+  and (min-device-width: 43em) 
+  and (max-device-width: 62em) {
+
+}
+
+/* CELULARES */
+@media screen 
+  and (min-device-width: 20em) 
+  and (max-device-width: 43em) {
+
+}
