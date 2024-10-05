@@ -22,7 +22,7 @@
 
 .grid {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "item1 item3 item5 item7"
         "item1 item4 item5 item7"
         "item2 item4 item6 item6";
