@@ -5,10 +5,11 @@ import MainParallax from "../../components/home/mainParallax/MainParallax";
 import MainShorcuts from "../../components/home/mainShorcuts/MainShorcuts";
 import ResponsiveCarousel from "../../components/home/mainShorcuts/ResponsiveCarousel";
 import MainSlide from "../../components/home/mainSlide/MainSlide";
+import styles from "./Home.module.css";
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.font}>
       <MainParallax />
       <MainShorcuts />
       <ResponsiveCarousel />
