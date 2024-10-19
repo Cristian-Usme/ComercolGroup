@@ -15,17 +15,18 @@ mongoose
   .then(() => console.log('Conexión establecida con MongoDB'))
   .catch(err => console.log('Hubo un error estableciendo la conexión con la base de datos: ', err));
 
+// CREACIÓN DEL SCHEMA
 var productSchema = new mongoose.Schema({
   id: { type: String, required: true },
   t_num: { type: String, required: true },
-  status: { type: String, required: true }},
-  { strict: false });
-
+  status: { type: String, required: true }
+}, { strict: false });
 var productModel = mongoose.model('Product', productSchema);
 
-router.get('/', async (req, res) => {
+// POST - DEVUELVE EL ESTADO DEL PRODUCTO
+router.post('/', async (req, res) => {
   try {
-    let { t_num } = req.query;
+    let { t_num } = req.body;
     const product = await productModel.findOne({ t_num: t_num }, 'status');
 
     if (product) {
