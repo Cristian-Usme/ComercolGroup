@@ -1,3 +1,7 @@
+.column {
+    display: flex;
+    flex-direction: column;
+}
 .mainShorcutsContainer {
     display: flex;
     justify-content: space-between;

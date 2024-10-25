@@ -1,0 +1,59 @@
+.trackingContainer {
+    margin: 2rem 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 2.5rem; /* Aumentar el tamaño del título */
+    margin: 1.5rem 0; /* Separación mayor del título respecto a la barra de búsqueda */
+}
+
+.input {
+    padding: 0.75rem; /* Aumentar el padding del input */
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    transition: border-color 0.3s ease;
+    font-size: 1.1rem; /* Aumentar tamaño de fuente del input */
+}
+
+.button {
+    padding: 0.75rem 1.5rem; /* Aumentar el padding del botón */
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    font-size: 1.1rem; /* Aumentar tamaño de fuente del botón */
+}
+
+.button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.exampleText {
+    font-size: 1rem; /* Aumentar tamaño del texto de ejemplo */
+    color: rgba(0, 0, 0, 0.5); /* Hacer el texto menos visible */
+    margin-bottom: 1rem; /* Espacio entre el texto de ejemplo y el input */
+}
+
+.trackingResult {
+    margin-top: 1.5rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: left;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

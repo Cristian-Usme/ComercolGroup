@@ -13,8 +13,10 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.headerDiv}>
         <div className={styles.logo}>
-          <h1>COMERCOL</h1>
-          <p>GROUP</p>
+          {/* <h1>COMERCOL</h1>
+          <p>GROUP</p> */}
+
+          <img src="../../../public/img/LOGO-CON-TEXTO-COMERCOL-2 - copia.png" alt="Logo" style={ { width: "150px" }}/>
         </div>
         <div>
           <div className={styles.burgerMenu} onClick={toggleMenu}>
