@@ -27,11 +27,14 @@ var productModel = mongoose.model('Product', productSchema);
 router.post('/', async (req, res) => {
   try {
     let { t_num } = req.body;
-    const product = await productModel.findOne({ t_num: t_num }, 'status');
+    const product = await productModel.findOne({ t_num: t_num }, 'status estimatedDelivery trans');
 
     if (product) {
       console.log('Producto encontrado:', product);
-      res.json({ status: product.status });
+      res.json({ status: product.status,
+                 estimatedDelivery: product.estimatedDelivery,
+                 trans: product.trans
+      });
     } else {
       console.log(t_num, ' No encontrado.');
       res.status(404).json({ message: 'El número de guía no ha sido encontrado.' });
