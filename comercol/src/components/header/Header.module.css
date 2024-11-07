@@ -6,7 +6,7 @@
     display: flex;
     padding: 3rem 5rem;
     box-sizing: border-box;
-    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+    z-index: 1000;
 }
 
 .headerDiv {
