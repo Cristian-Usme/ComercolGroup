@@ -3,6 +3,11 @@
   --heading-font: 'Oswald', sans-serif;
   --primary-color: whitesmoke;
   --secundary-color: black;
+  --gray: #DBDBCF;
+  --dark-gray: #BFB7AB;
+  --brown: #734002;
+  --orange: #D95202;
+  --red: #BF2604;
 }
 
 * {
@@ -11,15 +16,24 @@
   margin: 0;
   font-family: var(--primary-font);
 }
+
 * h1 {
   font-family: var(--heading-font);
 }
+
 * h2 {
   font-family: var(--heading-font);
 }
+
 * h3 {
   font-family: var(--heading-font);
 }
+
 * h4 {
-  font-family: var(--heading-font);
+  font-family: var(--heading-font);;
+}
+
+* p {
+  font-family: var(--primary-font);
+  
 }

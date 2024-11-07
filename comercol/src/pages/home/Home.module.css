@@ -1,5 +1,9 @@
+    
+
+
 .font {
     font-family: var(--primary-font);
+    background-color: var(--gray);
 }
 .font h1 {
     font-family: var(--heading-font);
