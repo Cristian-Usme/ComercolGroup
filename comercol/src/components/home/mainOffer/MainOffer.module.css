@@ -23,8 +23,8 @@
     display: flex;
     width: 40vw;
     height: 15rem;
-    background-color: rgb(180, 180, 180);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--dark-gray);
+    box-shadow: 0 0 10px var(--brown);
 }
 
 .img {
