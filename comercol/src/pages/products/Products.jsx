@@ -8,8 +8,8 @@ export default function Products() {
   return (
     <div className={styles.font}>
       <Parallax />
-      <Shipping />
       <Grid />
+      <Shipping />
       <Chart />
     </div>
   );
