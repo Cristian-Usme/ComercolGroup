@@ -19,31 +19,65 @@
     left: 1.5rem;
 }
 
-@media (max-width: 1024px) {
+/* PANTALLAS GRANDES */
+@media screen 
+  and (min-device-width: 100em) {
+    .mainParallax {
+        height: 60rem;
+    }
+    
+    .textParallax {
+        font-size: 2rem;
+        bottom: 16rem;
+        left: 0rem;
+    }
+}
+
+/* LAPTOPS PEQUEÑAS */
+@media screen 
+  and (min-device-width: 62em)
+  and (max-device-width: 82em) {
     .textParallax {
         font-size: 1.5rem;
-        bottom: 5rem;
+        bottom: 25vh;
         left: 0vw;
         text-align: center;
     }
 }
 
-@media (max-width: 426px) {
+/* TABLETS */
+@media screen 
+  and (min-device-width: 43em) 
+  and (max-device-width: 62em) {
+    .mainParallax {
+        height: 50rem;
+        width: 100%;
+    }
+    .textParallax {
+        font-size: 1.2rem;
+        bottom: 25vh;
+        left: 0vw;
+        text-align: center;
+    }
+}
+
+/* CELULARES */
+@media screen 
+  and (min-device-width: 20em)
+  and (max-device-width: 43em) {
+    .mainParallax {
+        height: 45rem;
+        width: 100%;
+    }
     .textParallax {
         width: 100%;
-        font-size: 1rem;
+        font-size: 0.9rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        bottom: 15vh;
+        bottom: 35vh;
         left: 0vw;
-    }
-}
-
-@media (max-width: 376px) {
-    .textParallax {
-        font-size: 1rem;
     }
 }

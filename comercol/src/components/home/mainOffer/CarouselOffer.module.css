@@ -10,7 +10,7 @@
     height: 25rem;
     flex-direction: column;
     padding: 0.3rem 0.3rem 2rem 0.3rem;
-    background-color: var(--gray);
+    background-color: var(--orange);
 }
 
 .img {

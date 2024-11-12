@@ -107,3 +107,135 @@
 .item7:hover {
     background-image: url('https://cdn.pixabay.com/photo/2022/09/23/15/33/banana-7474703_1280.jpg');
 }
+
+/* PANTALLAS GRANDES */
+@media screen 
+  and (min-device-width: 100em) {
+    .container {
+        padding: 5vw;
+    }
+    .title {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .text {
+        font-size: 2rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-areas:
+            "item1 item3 item5 item7"
+            "item1 item4 item5 item7"
+            "item2 item4 item6 item6";
+        grid-gap: 1rem;
+        grid-template-rows: 10rem 15rem 10rem;
+        grid-template-columns: 20rem 28rem 20rem 28rem;
+    }
+}
+
+/* LAPTOPS PEQUEÑAS */
+@media screen 
+  and (min-device-width: 62em)
+  and (max-device-width: 82em) {
+    .container {
+        padding: 5vw;
+    }
+    .title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .text {
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-areas:
+            "item1 item3 item5 item7"
+            "item1 item4 item5 item7"
+            "item2 item4 item6 item6";
+        grid-gap: 0.8rem;
+        grid-template-rows: 10rem 15rem 10rem;
+        grid-template-columns: 12rem 17rem 12rem 17rem;
+    }
+}
+
+/* TABLETS */
+@media screen 
+  and (min-device-width: 43em) 
+  and (max-device-width: 62em) {
+    .container {
+        padding: 5vw;
+    }
+    .title {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .text {
+        font-size: 1.2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .grid {
+        display: grid;
+        left: 0;
+        grid-template-areas:
+            "item1 item1 item2"
+            "item3 item4 item4"
+            "item5 item5 item6"
+            "item7 item7 item6";
+        grid-gap: 0.5rem;
+        grid-template-rows: 9rem 12rem 9rem 12rem;
+        grid-template-columns: 13rem 15rem 13rem;
+    }
+}
+
+/* CELULARES */
+@media screen 
+  and (min-device-width: 20em)
+  and (max-device-width: 43em) {
+    .container {
+        padding: 4vw;
+    }
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .text {
+        font-size: 0.8rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .grid {
+        display: grid;
+        border-radius: 10px;
+        left: 0;
+        grid-template-areas:
+            "item1 item1 item2"
+            "item3 item4 item4"
+            "item5 item5 item6"
+            "item7 item7 item6";
+        grid-gap: 0.3rem;
+        grid-template-rows: 9rem 12rem 9rem 12rem;
+        grid-template-columns: 5rem 9rem 5rem;
+    }
+}
