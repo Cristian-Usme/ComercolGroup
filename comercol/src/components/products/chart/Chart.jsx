@@ -13,12 +13,20 @@ export default function Chart() {
 
         <div className={styles.col}>
           <CountUp start={0} end={1900} duration={7} className={styles.cont} />
-          <h2>PRODUCTOS EXPORTADOS ESTE MES</h2>
+          <h2>PRODUCTOS COMERCIADOS ESTE MES</h2>
         </div>
 
         <div className={styles.col}>
           <CountUp start={0} end={4} duration={7} className={styles.cont} />
           <h2>PUERTOS DE OPERACIÓN</h2>
+        </div>
+      </div>
+
+      <div className={styles.row}>
+        <div className={styles.col}>
+          <h1>PRODUCTO DE LA TEMPORADA:</h1>
+          <br />
+          <h2>Cacharros Navideños</h2>
         </div>
       </div>
     </div>
