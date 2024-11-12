@@ -19,16 +19,29 @@
     left: 1.5rem;
 }
 
-/* PANTALLAS GRANDES */
+/* PANTALLAS 4K */
 @media screen 
-  and (min-device-width: 100em) {
+  and (min-device-width: 140em) {
     .mainParallax {
-        height: 60rem;
+        height: 90rem;
     }
-    
     .textParallax {
         font-size: 2rem;
-        bottom: 16rem;
+        bottom: 30rem;
+        left: 10rem;
+    }
+}
+
+/* PANTALLAS GRANDES */
+@media screen 
+  and (min-device-width: 100em)
+  and (max-device-width: 140em) {
+    .mainParallax {
+        height: 70rem;
+    }
+    .textParallax {
+        font-size: 2rem;
+        bottom: 20rem;
         left: 0rem;
     }
 }
@@ -46,7 +59,7 @@
 }
 
 /* TABLETS */
-@media screen 
+@media screen
   and (min-device-width: 43em) 
   and (max-device-width: 62em) {
     .mainParallax {
