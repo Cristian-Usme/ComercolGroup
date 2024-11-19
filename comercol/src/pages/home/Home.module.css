@@ -1,0 +1,13 @@
+.font {
+    font-family: var(--primary-font);
+    background-color: var(--primary-color);
+}
+.font h1 {
+    font-family: var(--heading-font);
+}
+.font h2 {
+    font-family: var(--heading-font);
+}
+.font h3 {
+    font-family: var(--heading-font);
+}

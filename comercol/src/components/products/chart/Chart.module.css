@@ -1,0 +1,152 @@
+.container {
+    width: 100%;
+    padding: 5rem;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    color: white;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../../../assets/chart_bg.jpg');
+    border: solid 1px black;
+    border-radius: 1rem;
+    justify-content: space-evenly;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 3rem;
+}
+
+.col {
+    display: flex;
+    width: 15rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.colf {
+    display: flex;
+    width: 15rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.colf h1 {
+    color: var(--orange);
+}
+
+.cont {
+    font-size: 3rem;
+    font-family: var(--heading-font);
+    color: white;
+}
+
+/* PANTALLAS GRANDES */
+@media screen 
+  and (min-device-width: 100em) {
+    .col h2 {
+        font-size: 2rem;
+    }
+    .cont {
+        font-size: 4rem;
+    }
+    .colf h2 {
+        font-size: 2rem;
+    }
+}
+
+/* LAPTOPS PEQUEÑAS */
+@media screen 
+  and (min-device-width: 62em)
+  and (max-device-width: 82em) {
+    .col h2 {
+        font-size: 1.5rem;
+    }
+    .cont {
+        font-size: 3rem;
+    }
+    .colf h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* TABLETS */
+@media screen 
+  and (min-device-width: 43em) 
+  and (max-device-width: 62em) {
+    .row {
+        flex-direction: column;
+        padding: 5rem;
+    }
+    .col {
+        margin: 1rem;
+        padding-bottom: 2rem;
+        border-bottom: solid 1px whitesmoke;
+        width: 100%;
+    }
+    .col h2 {
+        font-size: 1.5rem;
+    }
+    .cont {
+        font-size: 3.5rem;
+        color: var(--orange);
+    }
+    .colf {
+        margin: 1rem;
+        padding-bottom: 2rem;
+        width: 100%;
+    }
+    .colf h2 {
+        font-size: 1.5rem;
+    }
+    .colf h1 {
+        color: var(--orange);
+    }
+}
+
+/* CELULARES */
+@media screen 
+  and (min-device-width: 20em)
+  and (max-device-width: 43em) {
+    .row {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .col {
+        margin: 1rem;
+        padding-bottom: 2rem;
+        border-bottom: solid 1px whitesmoke;
+        width: 100%;
+    }
+    .col h2 {
+        font-size: 1.2rem;
+    }
+    .cont {
+        font-size: 3rem;
+        color: var(--orange);
+    }
+    .colf {
+        margin: 1rem;
+        padding-bottom: 1rem;
+        width: 100%;
+    }
+    .colf h2 {
+        font-size: 1.2rem;
+    }
+    .colf h1 {
+        color: var(--orange);
+    }
+}

@@ -3,14 +3,14 @@
     display: flex;
     height: 70vh;
     margin: 3rem 0;
-    background-color: rgb(180, 180, 180);
+    background-color: white;
 }
 
 .leftTitle {
-    width: 50vw;
+    width: 55vw;
     height: 70vh;
-    background-image: url('../../../../public/img/logisticos.jpeg');
-    background-position: start;
+    background-image: url('../../../../public/img/logisticos.jpg');
+    background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;

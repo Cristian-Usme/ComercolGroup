@@ -23,14 +23,17 @@
     display: flex;
     width: 40vw;
     height: 15rem;
-    background-color: rgb(180, 180, 180);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--orange);
+    box-shadow: 0 0 10px var(--brown);
+    border-radius: 3px;
 }
 
 .img {
     width: 50%;
     object-fit: cover;
     margin-right: 1rem;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 .serviceText {

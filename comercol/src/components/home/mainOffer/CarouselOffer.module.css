@@ -10,8 +10,7 @@
     height: 25rem;
     flex-direction: column;
     padding: 0.3rem 0.3rem 2rem 0.3rem;
-    background-color: rgb(180, 180, 180);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--orange);
 }
 
 .img {

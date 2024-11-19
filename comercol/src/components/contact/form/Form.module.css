@@ -26,6 +26,8 @@
     margin: -12rem auto 0;
     padding: 4rem 5rem 2rem;
     background-color: white;
+    box-shadow: 0 0 10px var(--brown);
+    border-radius: 3px;
     gap: 5rem;
 }
 

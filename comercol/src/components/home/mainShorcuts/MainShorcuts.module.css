@@ -1,3 +1,8 @@
+.column {
+    display: flex;
+    flex-direction: column;
+    background-color: var();
+}
 .mainShorcutsContainer {
     display: flex;
     justify-content: space-between;
@@ -7,9 +12,10 @@
 }
 
 .mainShorcuts {
+    padding-left: 1rem;
+    padding-right: 1rem;
     width: 20vw;
     text-align: start;
-    transition: 350ms;
 }
 
 .img {
@@ -37,6 +43,8 @@
 .readMore{
     margin-top: 0.8rem;
     font-weight: bold;
+    transform-origin: top left;
+    transition: transform 0.35s ease-in-out;
 }
 
 @media (max-width: 1024px) {
@@ -47,7 +55,8 @@
 
 @media (hover:hover) {
     .mainShorcuts:hover {
-        font-size: 1.5rem;
-        align-items: start;
+        .readMore {
+            transform: scale(1.3);
+        }
     }
 }
