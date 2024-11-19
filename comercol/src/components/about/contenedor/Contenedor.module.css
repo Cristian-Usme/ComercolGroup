@@ -1,23 +1,164 @@
-.blackContainer {
-    display: flex;
-    background-image: url('../../../../public/img/imgParallaxAbout.jpeg');
+/* Contenedor principal */
+.parallaxContainer {
+    position: relative;
+    width: 100%;
     height: 100vh;
-    justify-content: space-around;
-    align-items: self-end;
-    color: aliceblue;
+    /* Altura inicial del parallax */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    /* Fondo de seguridad */
+}
+
+/* Efecto Parallax */
+.parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../public/img/imgParallaxAbout.jpeg');
+    /* Ruta a tu imagen */
+    background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    z-index: 1;
+
+    /* Transición suave inicial */
+    transform: scale(1);
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    /* Suavidad con easing */
 }
 
-.textContainer {
-    height: 10rem;
-    justify-content: space-arounds;
+/* Efecto de acercamiento al pasar el mouse */
+.parallaxContainer:hover .parallax {
+    transform: scale(1.05);
+    /* Zoom ligero */
 }
 
-.horizontalLine {
-    height: 5%;
-    width: 15%;
-    border-bottom: 0.5px white solid;
+/* Recuadro emergente */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.text {
+    opacity: 0;
+    /* Inicialmente oculto */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo semitransparente */
+    color: #fff;
+    /* Color blanco para todo el texto */
+    padding: 20px;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+    /* Suavidad para la aparición del texto */
+    z-index: 3;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+    /* Sombra para mejor legibilidad */
+}
+
+/* Título del texto */
+.text h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    /* Blanco puro */
+    margin-bottom: 10px;
+    /* Espaciado con el párrafo */
+}
+
+/* Párrafo del texto */
+.text p {
+    font-size: 1rem;
+    color: #f0f0f0;
+    /* Blanco ligeramente menos intenso */
+    line-height: 1.5;
+    /* Espaciado entre líneas */
+}
+
+/* Mostrar el texto al pasar el mouse */
+.parallaxContainer:hover .text {
+    opacity: 1;
+    /* Aparece suavemente */
+    pointer-events: all;
+    /* Permite interacción */
+}
+
+/* Responsiveness */
+
+/* Tablets y dispositivos medianos (1024px o menos) */
+@media (max-width: 1024px) {
+    .parallaxContainer {
+        height: 50vh;
+        /* Ajusta la altura para pantallas medianas */
+    }
+
+    .text {
+        position: static;
+        margin-top: 20px;
+        opacity: 1;
+        /* Siempre visible */
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #fff;
+    }
+
+    .parallax {
+        background-attachment: scroll;
+        /* Cambia a scroll en dispositivos móviles */
+        height: 50vh;
+    }
+}
+
+/* Dispositivos pequeños (768px o menos) */
+@media (max-width: 768px) {
+    .parallaxContainer {
+        height: 40vh;
+        /* Reduce la altura */
+    }
+
+    .text {
+        margin-top: 10px;
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .parallax {
+        height: 40vh;
+    }
+}
+
+/* Dispositivos muy pequeños (480px o menos) */
+@media (max-width: 480px) {
+    .parallaxContainer {
+        height: auto;
+        /* Altura dinámica */
+    }
+
+    .text {
+        text-align: center;
+        padding: 10px;
+        font-size: 0.8rem;
+        background-color: transparent;
+        /* Sin fondo */
+        color: #000;
+        /* Texto negro */
+    }
+
+    .parallax {
+        background-attachment: scroll;
+        height: auto;
+    }
 }

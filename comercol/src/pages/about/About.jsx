@@ -8,9 +8,9 @@ import Objetivos from '../../components/about/objetivos/Objetivos.jsx'
 export default function About() {
     return (
         <div>
+
+            {/* <AboutParallax /> */}
             <Contenedor />
-            <AboutParallax />
-            <Nosotros />
             <Mision />
             <Vision />
             <Objetivos />
