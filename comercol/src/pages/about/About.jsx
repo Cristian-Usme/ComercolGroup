@@ -8,13 +8,13 @@ import styles from "./About.module.css";
 
 export default function About() {
   return (
-    <div className={styles.font}>
+    <div>
+
+      {/* <AboutParallax /> */}
       <Contenedor />
-      <AboutParallax />
-      <Nosotros />
       <Mision />
       <Vision />
       <Objetivos />
     </div>
-  );
+  )
 }
